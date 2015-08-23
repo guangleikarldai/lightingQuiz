@@ -1,25 +1,84 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="happy_birthday" translatesAutoresizingMaskIntoConstraints="NO" id="9Bw-Lx-X6F">
+                                <rect key="frame" x="20" y="240" width="280" height="160"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lihui" translatesAutoresizingMaskIntoConstraints="NO" id="nPj-QO-qEV">
+                                <rect key="frame" x="70" y="39" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nPj-QO-qEV" secondAttribute="height" multiplier="1:1" id="O1R-u5-5S6"/>
+                                    <constraint firstAttribute="height" constant="180" id="ago-KB-gzg"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9Bw-Lx-X6F" firstAttribute="centerX" secondItem="nPj-QO-qEV" secondAttribute="centerX" id="4DQ-cI-fbd"/>
+                            <constraint firstItem="nPj-QO-qEV" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="54" id="Jt5-MH-tpd"/>
+                            <constraint firstItem="nPj-QO-qEV" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="19" id="NOo-RS-oCf"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="9Bw-Lx-X6F" secondAttribute="bottom" constant="168" id="b2k-yz-fsL"/>
+                            <constraint firstItem="9Bw-Lx-X6F" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="4" id="wxD-CL-X0e"/>
+                            <constraint firstItem="9Bw-Lx-X6F" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="x40-JQ-mV9"/>
+                            <constraint firstItem="9Bw-Lx-X6F" firstAttribute="top" secondItem="nPj-QO-qEV" secondAttribute="bottom" constant="21" id="xeo-Y4-Xzp"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="130.66666666666666" y="220.57333333333332"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="SLo-Qh-VQh">
+            <objects>
+                <tableViewController id="hi0-XH-AV6" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="olp-xV-sg2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2eX-eU-ft0">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2eX-eU-ft0" id="dsM-zO-YD6">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hi0-XH-AV6" id="8iG-lu-QCn"/>
+                            <outlet property="delegate" destination="hi0-XH-AV6" id="tnm-iU-Mmj"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nJA-Ch-Q4s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="461.33333333333331" y="132.53333333333333"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="happy_birthday" width="400" height="300"/>
+        <image name="lihui" width="360" height="360"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

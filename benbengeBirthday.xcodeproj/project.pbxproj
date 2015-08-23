@@ -168,7 +168,7 @@
 				TargetAttributes = {
 					16E20AB61B824AE1009B8B0E = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = 454Z66DUZ9;
+						DevelopmentTeam = GCG9VGW2C4;
 					};
 					16E20ACF1B824AE1009B8B0E = {
 						CreatedOnToolsVersion = 6.4;
@@ -423,6 +423,7 @@
 				16E20ADC1B824AE1009B8B0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		16E20ADD1B824AE1009B8B0E /* Build configuration list for PBXNativeTarget "benbengeBirthdayTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +432,7 @@
 				16E20ADF1B824AE1009B8B0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>93E8EF50-1CB3-480A-89C4-CF48A95E7369</string>
+	<key>IDESourceControlProjectName</key>
+	<string>benbengeBirthday</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E87C9AC6D32ECAB439FBC6999F0DD8B514EC9D51</key>
+		<string>https://github.com/guangleikarldai/lightingQuiz.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>benbengeBirthday.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E87C9AC6D32ECAB439FBC6999F0DD8B514EC9D51</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/guangleikarldai/lightingQuiz.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E87C9AC6D32ECAB439FBC6999F0DD8B514EC9D51</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E87C9AC6D32ECAB439FBC6999F0DD8B514EC9D51</string>
+			<key>IDESourceControlWCCName</key>
+			<string>lightingQuiz</string>
+		</dict>
+	</array>
+</dict>
+</plist>
