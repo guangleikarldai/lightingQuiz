@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4un-ZV-db9">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -18,16 +18,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="happy_birthday" translatesAutoresizingMaskIntoConstraints="NO" id="9Bw-Lx-X6F">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="happy_birthday" translatesAutoresizingMaskIntoConstraints="NO" id="9Bw-Lx-X6F">
                                 <rect key="frame" x="20" y="240" width="280" height="160"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lihui" translatesAutoresizingMaskIntoConstraints="NO" id="nPj-QO-qEV">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="lihui" translatesAutoresizingMaskIntoConstraints="NO" id="nPj-QO-qEV">
                                 <rect key="frame" x="70" y="39" width="180" height="180"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="nPj-QO-qEV" secondAttribute="height" multiplier="1:1" id="O1R-u5-5S6"/>
                                     <constraint firstAttribute="height" constant="180" id="ago-KB-gzg"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhF-DM-hFh">
+                                <rect key="frame" x="137" y="466" width="38" height="30"/>
+                                <state key="normal" title="Start!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hi0-XH-AV6" kind="push" id="Iby-uD-sXq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -40,10 +49,11 @@
                             <constraint firstItem="9Bw-Lx-X6F" firstAttribute="top" secondItem="nPj-QO-qEV" secondAttribute="bottom" constant="21" id="xeo-Y4-Xzp"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="tqG-6n-09z"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130.66666666666666" y="220.57333333333332"/>
+            <point key="canvasLocation" x="662" y="220"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="SLo-Qh-VQh">
@@ -66,10 +76,29 @@
                             <outlet property="delegate" destination="hi0-XH-AV6" id="tnm-iU-Mmj"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="7zi-07-xN2"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJA-Ch-Q4s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="461.33333333333331" y="132.53333333333333"/>
+            <point key="canvasLocation" x="1061" y="220"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mCQ-UC-JwS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4un-ZV-db9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="no4-qi-mDz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="w1D-HL-mM2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bzx-VV-IKB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="220"/>
         </scene>
     </scenes>
     <resources>

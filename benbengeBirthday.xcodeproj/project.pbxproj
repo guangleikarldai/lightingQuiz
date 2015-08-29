@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		167802B41B9145C70050B3F0 /* QuizTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 167802B31B9145C70050B3F0 /* QuizTableViewController.m */; };
 		16E20ABD1B824AE1009B8B0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E20ABC1B824AE1009B8B0E /* main.m */; };
 		16E20AC01B824AE1009B8B0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E20ABF1B824AE1009B8B0E /* AppDelegate.m */; };
 		16E20AC31B824AE1009B8B0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E20AC21B824AE1009B8B0E /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		167802B21B9145C70050B3F0 /* QuizTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizTableViewController.h; sourceTree = "<group>"; };
+		167802B31B9145C70050B3F0 /* QuizTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizTableViewController.m; sourceTree = "<group>"; };
 		16E20AB71B824AE1009B8B0E /* benbengeBirthday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = benbengeBirthday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16E20ABB1B824AE1009B8B0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16E20ABC1B824AE1009B8B0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -89,6 +92,8 @@
 				16E20AC71B824AE1009B8B0E /* Images.xcassets */,
 				16E20AC91B824AE1009B8B0E /* LaunchScreen.xib */,
 				16E20ABA1B824AE1009B8B0E /* Supporting Files */,
+				167802B21B9145C70050B3F0 /* QuizTableViewController.h */,
+				167802B31B9145C70050B3F0 /* QuizTableViewController.m */,
 			);
 			path = benbengeBirthday;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				167802B41B9145C70050B3F0 /* QuizTableViewController.m in Sources */,
 				16E20AC31B824AE1009B8B0E /* ViewController.m in Sources */,
 				16E20AC01B824AE1009B8B0E /* AppDelegate.m in Sources */,
 				16E20ABD1B824AE1009B8B0E /* main.m in Sources */,
