@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" userLabel="Welcome View Controller" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -34,7 +34,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hi0-XH-AV6" kind="push" id="Iby-uD-sXq"/>
+                                    <segue destination="CiI-io-6mC" kind="push" id="A9O-I7-VbM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -54,6 +54,84 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="662" y="220"/>
+        </scene>
+        <!--Magic Cube Controller-->
+        <scene sceneID="geP-dY-LgA">
+            <objects>
+                <viewController id="CiI-io-6mC" userLabel="Magic Cube Controller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nkv-SL-HAN"/>
+                        <viewControllerLayoutGuide type="bottom" id="rTd-Bc-BsW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YUh-6h-bzS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="magic_cube" translatesAutoresizingMaskIntoConstraints="NO" id="wQL-QS-VGb">
+                                <rect key="frame" x="40" y="97" width="240" height="240"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="将魔方在8分钟内复原，分值：10" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pnY-hB-kaH">
+                                <rect key="frame" x="40" y="362" width="240" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNC-sg-goM">
+                                <rect key="frame" x="111" y="484" width="98" height="30"/>
+                                <state key="normal" title="Next Question">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="nkZ-m1-cxK" kind="push" id="ivQ-70-GHh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="B4w-OO-LVo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wPX-Pc-ppS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064" y="220"/>
+        </scene>
+        <!--ShiTou View Controller-->
+        <scene sceneID="cPL-lT-488">
+            <objects>
+                <viewController id="nkZ-m1-cxK" userLabel="ShiTou View Controller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CPs-gJ-rqJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="fvs-3L-dhg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Whk-wS-ZVN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shitoujiandaobu" translatesAutoresizingMaskIntoConstraints="NO" id="VRy-cA-Z37">
+                                <rect key="frame" x="40" y="104" width="240" height="180"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="在石头剪刀布中战胜磊哥（7局4胜）， 分值： 5分" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="h5S-BV-DcB">
+                                <rect key="frame" x="40" y="349" width="240" height="85"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euV-ik-zOc">
+                                <rect key="frame" x="111" y="473" width="98" height="30"/>
+                                <state key="normal" title="Next Question">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hi0-XH-AV6" kind="push" id="0Hf-6i-Rga"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HBa-JV-aBI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E9O-Ne-La6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1450" y="226"/>
         </scene>
         <!--Quiz Table View Controller-->
         <scene sceneID="SLo-Qh-VQh">
@@ -80,7 +158,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJA-Ch-Q4s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1061" y="220"/>
+            <point key="canvasLocation" x="1071" y="902"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mCQ-UC-JwS">
@@ -104,6 +182,8 @@
     <resources>
         <image name="happy_birthday" width="400" height="300"/>
         <image name="lihui" width="360" height="360"/>
+        <image name="magic_cube" width="175" height="179"/>
+        <image name="shitoujiandaobu" width="366" height="206"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

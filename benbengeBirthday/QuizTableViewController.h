@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface QuizTableViewController : UITableViewController
-
+@property (strong, nonatomic) UIManagedDocument *document;
 @end
