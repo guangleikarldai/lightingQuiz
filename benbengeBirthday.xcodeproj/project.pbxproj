@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		167802B41B9145C70050B3F0 /* QuizTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 167802B31B9145C70050B3F0 /* QuizTableViewController.m */; };
+		168EEB4C1B92CEC900518113 /* QuizModelData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 168EEB4A1B92CEC900518113 /* QuizModelData.xcdatamodeld */; };
 		16E20ABD1B824AE1009B8B0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E20ABC1B824AE1009B8B0E /* main.m */; };
 		16E20AC01B824AE1009B8B0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E20ABF1B824AE1009B8B0E /* AppDelegate.m */; };
 		16E20AC31B824AE1009B8B0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E20AC21B824AE1009B8B0E /* ViewController.m */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		167802B21B9145C70050B3F0 /* QuizTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizTableViewController.h; sourceTree = "<group>"; };
 		167802B31B9145C70050B3F0 /* QuizTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizTableViewController.m; sourceTree = "<group>"; };
+		168EEB4B1B92CEC900518113 /* QuizModelData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuizModelData.xcdatamodel; sourceTree = "<group>"; };
 		16E20AB71B824AE1009B8B0E /* benbengeBirthday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = benbengeBirthday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16E20ABB1B824AE1009B8B0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16E20ABC1B824AE1009B8B0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,6 +65,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		168EEB451B92CD5C00518113 /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				168EEB461B92CD7800518113 /* Model */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
+		168EEB461B92CD7800518113 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		16E20AAE1B824AE1009B8B0E = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +101,7 @@
 		16E20AB91B824AE1009B8B0E /* benbengeBirthday */ = {
 			isa = PBXGroup;
 			children = (
+				168EEB451B92CD5C00518113 /* Quiz */,
 				16E20ABE1B824AE1009B8B0E /* AppDelegate.h */,
 				16E20ABF1B824AE1009B8B0E /* AppDelegate.m */,
 				16E20AC11B824AE1009B8B0E /* ViewController.h */,
@@ -94,6 +112,7 @@
 				16E20ABA1B824AE1009B8B0E /* Supporting Files */,
 				167802B21B9145C70050B3F0 /* QuizTableViewController.h */,
 				167802B31B9145C70050B3F0 /* QuizTableViewController.m */,
+				168EEB4A1B92CEC900518113 /* QuizModelData.xcdatamodeld */,
 			);
 			path = benbengeBirthday;
 			sourceTree = "<group>";
@@ -228,6 +247,7 @@
 				167802B41B9145C70050B3F0 /* QuizTableViewController.m in Sources */,
 				16E20AC31B824AE1009B8B0E /* ViewController.m in Sources */,
 				16E20AC01B824AE1009B8B0E /* AppDelegate.m in Sources */,
+				168EEB4C1B92CEC900518113 /* QuizModelData.xcdatamodeld in Sources */,
 				16E20ABD1B824AE1009B8B0E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +461,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		168EEB4A1B92CEC900518113 /* QuizModelData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				168EEB4B1B92CEC900518113 /* QuizModelData.xcdatamodel */,
+			);
+			currentVersion = 168EEB4B1B92CEC900518113 /* QuizModelData.xcdatamodel */;
+			path = QuizModelData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 16E20AAF1B824AE1009B8B0E /* Project object */;
 }
