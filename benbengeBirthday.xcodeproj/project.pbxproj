@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		167802B41B9145C70050B3F0 /* QuizTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 167802B31B9145C70050B3F0 /* QuizTableViewController.m */; };
 		168EEB4C1B92CEC900518113 /* QuizModelData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 168EEB4A1B92CEC900518113 /* QuizModelData.xcdatamodeld */; };
+		168EEB521B92E12000518113 /* QuizAnswerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 168EEB511B92E12000518113 /* QuizAnswerTableViewCell.m */; };
+		168EEB551B92E4C500518113 /* ScoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 168EEB541B92E4C500518113 /* ScoreManager.m */; };
+		168EEB581B934D2E00518113 /* FavoriteShuiGuoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 168EEB571B934D2E00518113 /* FavoriteShuiGuoViewController.m */; };
+		168EEB5B1B934FD500518113 /* RunningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 168EEB5A1B934FD500518113 /* RunningViewController.m */; };
+		168EEB5E1B9355A900518113 /* ArenaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 168EEB5D1B9355A900518113 /* ArenaViewController.m */; };
 		16E20ABD1B824AE1009B8B0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E20ABC1B824AE1009B8B0E /* main.m */; };
 		16E20AC01B824AE1009B8B0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E20ABF1B824AE1009B8B0E /* AppDelegate.m */; };
 		16E20AC31B824AE1009B8B0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E20AC21B824AE1009B8B0E /* ViewController.m */; };
@@ -32,6 +37,16 @@
 		167802B21B9145C70050B3F0 /* QuizTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizTableViewController.h; sourceTree = "<group>"; };
 		167802B31B9145C70050B3F0 /* QuizTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizTableViewController.m; sourceTree = "<group>"; };
 		168EEB4B1B92CEC900518113 /* QuizModelData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuizModelData.xcdatamodel; sourceTree = "<group>"; };
+		168EEB501B92E12000518113 /* QuizAnswerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizAnswerTableViewCell.h; sourceTree = "<group>"; };
+		168EEB511B92E12000518113 /* QuizAnswerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizAnswerTableViewCell.m; sourceTree = "<group>"; };
+		168EEB531B92E4C500518113 /* ScoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreManager.h; sourceTree = "<group>"; };
+		168EEB541B92E4C500518113 /* ScoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreManager.m; sourceTree = "<group>"; };
+		168EEB561B934D2E00518113 /* FavoriteShuiGuoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteShuiGuoViewController.h; sourceTree = "<group>"; };
+		168EEB571B934D2E00518113 /* FavoriteShuiGuoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteShuiGuoViewController.m; sourceTree = "<group>"; };
+		168EEB591B934FD500518113 /* RunningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunningViewController.h; sourceTree = "<group>"; };
+		168EEB5A1B934FD500518113 /* RunningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunningViewController.m; sourceTree = "<group>"; };
+		168EEB5C1B9355A900518113 /* ArenaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArenaViewController.h; sourceTree = "<group>"; };
+		168EEB5D1B9355A900518113 /* ArenaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArenaViewController.m; sourceTree = "<group>"; };
 		16E20AB71B824AE1009B8B0E /* benbengeBirthday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = benbengeBirthday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16E20ABB1B824AE1009B8B0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16E20ABC1B824AE1009B8B0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -113,6 +128,16 @@
 				167802B21B9145C70050B3F0 /* QuizTableViewController.h */,
 				167802B31B9145C70050B3F0 /* QuizTableViewController.m */,
 				168EEB4A1B92CEC900518113 /* QuizModelData.xcdatamodeld */,
+				168EEB501B92E12000518113 /* QuizAnswerTableViewCell.h */,
+				168EEB511B92E12000518113 /* QuizAnswerTableViewCell.m */,
+				168EEB531B92E4C500518113 /* ScoreManager.h */,
+				168EEB541B92E4C500518113 /* ScoreManager.m */,
+				168EEB561B934D2E00518113 /* FavoriteShuiGuoViewController.h */,
+				168EEB571B934D2E00518113 /* FavoriteShuiGuoViewController.m */,
+				168EEB591B934FD500518113 /* RunningViewController.h */,
+				168EEB5A1B934FD500518113 /* RunningViewController.m */,
+				168EEB5C1B9355A900518113 /* ArenaViewController.h */,
+				168EEB5D1B9355A900518113 /* ArenaViewController.m */,
 			);
 			path = benbengeBirthday;
 			sourceTree = "<group>";
@@ -246,7 +271,12 @@
 			files = (
 				167802B41B9145C70050B3F0 /* QuizTableViewController.m in Sources */,
 				16E20AC31B824AE1009B8B0E /* ViewController.m in Sources */,
+				168EEB521B92E12000518113 /* QuizAnswerTableViewCell.m in Sources */,
+				168EEB5B1B934FD500518113 /* RunningViewController.m in Sources */,
+				168EEB5E1B9355A900518113 /* ArenaViewController.m in Sources */,
 				16E20AC01B824AE1009B8B0E /* AppDelegate.m in Sources */,
+				168EEB551B92E4C500518113 /* ScoreManager.m in Sources */,
+				168EEB581B934D2E00518113 /* FavoriteShuiGuoViewController.m in Sources */,
 				168EEB4C1B92CEC900518113 /* QuizModelData.xcdatamodeld in Sources */,
 				16E20ABD1B824AE1009B8B0E /* main.m in Sources */,
 			);
