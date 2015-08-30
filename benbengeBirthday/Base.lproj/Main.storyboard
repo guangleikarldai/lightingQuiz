@@ -55,10 +55,10 @@
             </objects>
             <point key="canvasLocation" x="662" y="220"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Quiz Table View Controller-->
         <scene sceneID="SLo-Qh-VQh">
             <objects>
-                <tableViewController id="hi0-XH-AV6" sceneMemberID="viewController">
+                <tableViewController id="hi0-XH-AV6" customClass="QuizTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="olp-xV-sg2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
